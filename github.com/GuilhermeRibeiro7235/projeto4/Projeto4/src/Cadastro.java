@@ -6,20 +6,20 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
+import javax.swing.JComboBox;
 
 public class Cadastro extends JFrame {
 
 	private JPanel contentPane;
-	private JTextField textField;
-	private JTextField textField_1;
-	private JTextField textField_2;
-	private JTextField textField_3;
+	private JTextField txtCodigo;
+	private JTextField txtNome;
+	private JTextField txtDescricao;
+	private JTextField txtUnidades;
 	private JLabel lblValor;
-	private JTextField textField_4;
+	private JTextField txtValor;
 	private JLabel lblDataAtualizao;
-	private JTextField textField_5;
+	private JTextField txtDataAtualizao;
 	private JLabel lblAtivo;
-	private JTextField textField_6;
 
 	/**
 	 * Launch the application.
@@ -48,67 +48,66 @@ public class Cadastro extends JFrame {
 		contentPane.setLayout(null);
 		setContentPane(contentPane);
 		
-		JLabel lblNewLabel = new JLabel("C\u00F3digo");
-		lblNewLabel.setBounds(22, 29, 46, 14);
-		contentPane.add(lblNewLabel);
+		JLabel lblCodigo = new JLabel("C\u00F3digo");
+		lblCodigo.setBounds(22, 29, 46, 14);
+		contentPane.add(lblCodigo);
 		
-		textField = new JTextField();
-		textField.setBounds(98, 26, 86, 20);
-		contentPane.add(textField);
-		textField.setColumns(10);
+		txtCodigo = new JTextField();
+		txtCodigo.setBounds(146, 26, 86, 20);
+		contentPane.add(txtCodigo);
+		txtCodigo.setColumns(10);
 		
-		JLabel lblNewLabel_1 = new JLabel("Nome");
-		lblNewLabel_1.setBounds(22, 61, 46, 14);
-		contentPane.add(lblNewLabel_1);
+		JLabel lblNome = new JLabel("Nome");
+		lblNome.setBounds(22, 61, 46, 14);
+		contentPane.add(lblNome);
 		
-		textField_1 = new JTextField();
-		textField_1.setBounds(108, 58, 86, 20);
-		contentPane.add(textField_1);
-		textField_1.setColumns(10);
+		txtNome = new JTextField();
+		txtNome.setBounds(146, 57, 86, 20);
+		contentPane.add(txtNome);
+		txtNome.setColumns(10);
 		
-		JLabel lblNewLabel_2 = new JLabel("Descri\u00E7\u00E3o");
-		lblNewLabel_2.setBounds(22, 92, 57, 14);
-		contentPane.add(lblNewLabel_2);
+		JLabel lblDescricao = new JLabel("Descri\u00E7\u00E3o");
+		lblDescricao.setBounds(22, 92, 71, 14);
+		contentPane.add(lblDescricao);
 		
-		textField_2 = new JTextField();
-		textField_2.setBounds(99, 89, 227, 20);
-		contentPane.add(textField_2);
-		textField_2.setColumns(10);
+		txtDescricao = new JTextField();
+		txtDescricao.setBounds(146, 88, 118, 20);
+		contentPane.add(txtDescricao);
+		txtDescricao.setColumns(10);
 		
 		JLabel lblUnidades = new JLabel("Unidade(s)");
 		lblUnidades.setBounds(22, 123, 71, 14);
 		contentPane.add(lblUnidades);
 		
-		textField_3 = new JTextField();
-		textField_3.setBounds(98, 120, 86, 20);
-		contentPane.add(textField_3);
-		textField_3.setColumns(10);
+		txtUnidades = new JTextField();
+		txtUnidades.setBounds(146, 120, 86, 20);
+		contentPane.add(txtUnidades);
+		txtUnidades.setColumns(10);
 		
 		lblValor = new JLabel("Valor");
 		lblValor.setBounds(22, 150, 46, 14);
 		contentPane.add(lblValor);
 		
-		textField_4 = new JTextField();
-		textField_4.setBounds(98, 151, 86, 20);
-		contentPane.add(textField_4);
-		textField_4.setColumns(10);
+		txtValor = new JTextField();
+		txtValor.setBounds(146, 151, 86, 20);
+		contentPane.add(txtValor);
+		txtValor.setColumns(10);
 		
 		lblDataAtualizao = new JLabel("Data Atualiza\u00E7\u00E3o");
-		lblDataAtualizao.setBounds(22, 187, 91, 14);
+		lblDataAtualizao.setBounds(22, 187, 104, 14);
 		contentPane.add(lblDataAtualizao);
 		
-		textField_5 = new JTextField();
-		textField_5.setBounds(123, 184, 86, 20);
-		contentPane.add(textField_5);
-		textField_5.setColumns(10);
+		txtDataAtualizao = new JTextField();
+		txtDataAtualizao.setBounds(146, 178, 86, 20);
+		contentPane.add(txtDataAtualizao);
+		txtDataAtualizao.setColumns(10);
 		
 		lblAtivo = new JLabel("Ativo");
 		lblAtivo.setBounds(22, 219, 46, 14);
 		contentPane.add(lblAtivo);
 		
-		textField_6 = new JTextField();
-		textField_6.setBounds(98, 216, 86, 20);
-		contentPane.add(textField_6);
-		textField_6.setColumns(10);
+		JComboBox comboBox = new JComboBox();
+		comboBox.setBounds(156, 216, 28, 20);
+		contentPane.add(comboBox);
 	}
 }
