@@ -19,13 +19,15 @@ public class Pedido extends JFrame {
 	private JTextField txtCodigoDeBarra;
 	private JTextField txtValorUnitario;
 	private JTextField txtDescricaoDoPedido;
-	private JTextField txtTotalDePedidos;
-	private JLabel lblCancelar;
+	private JTextField txtTotalDoPedido;
 	private JLabel Cancelar;
 	private JLabel lblAvancar;
 	private JTable tablePedidos;
 	private JLabel lblNewLabel_1;
 	private JLabel lblMaisOpes;
+	private JTextField txtTroco;
+	private JTextField textField;
+	private JLabel lblValorRecebido;
 
 	/**
 	 * Launch the application.
@@ -70,7 +72,7 @@ public class Pedido extends JFrame {
 		contentPane.add(lblValorUnitario);
 		
 		JLabel lblTotalDePedidos = new JLabel("Total do Pedido");
-		lblTotalDePedidos.setBounds(10, 342, 93, 14);
+		lblTotalDePedidos.setBounds(194, 309, 93, 14);
 		contentPane.add(lblTotalDePedidos);
 		
 		txtCodigoDeBarra = new JTextField();
@@ -88,20 +90,14 @@ public class Pedido extends JFrame {
 		contentPane.add(txtDescricaoDoPedido);
 		txtDescricaoDoPedido.setColumns(10);
 		
-		txtTotalDePedidos = new JTextField();
-		txtTotalDePedidos.setBounds(99, 321, 138, 56);
-		contentPane.add(txtTotalDePedidos);
-		txtTotalDePedidos.setColumns(10);
+		txtTotalDoPedido = new JTextField();
+		txtTotalDoPedido.setBounds(195, 338, 138, 56);
+		contentPane.add(txtTotalDoPedido);
+		txtTotalDoPedido.setColumns(10);
 		
 		JLabel lblDescricao = new JLabel("Descri\u00E7\u00E3o do Produto");
 		lblDescricao.setBounds(193, 54, 138, 14);
 		contentPane.add(lblDescricao);
-		
-		lblCancelar = new JLabel("");
-		lblCancelar.setIcon(new ImageIcon("C:\\Users\\819167235\\Desktop\\projeto4\\cancelar.gif"));
-		lblCancelar.setHorizontalAlignment(SwingConstants.CENTER);
-		lblCancelar.setBounds(242, 430, 109, 50);
-		contentPane.add(lblCancelar);
 		
 		Cancelar = new JLabel("Cancelar");
 		Cancelar.setBounds(258, 405, 73, 14);
@@ -112,26 +108,49 @@ public class Pedido extends JFrame {
 		contentPane.add(lblAvancar);
 		
 		tablePedidos = new JTable();
-		tablePedidos.setBounds(195, 145, 365, 142);
+		tablePedidos.setBounds(195, 145, 376, 142);
 		contentPane.add(tablePedidos);
 		
 		lblNewLabel_1 = new JLabel("12/12/2019");
 		lblNewLabel_1.setBounds(51, 37, 93, 25);
 		contentPane.add(lblNewLabel_1);
 		
-		JLabel lblNewLabel_2 = new JLabel("");
-		lblNewLabel_2.setIcon(new ImageIcon("C:\\Users\\819167235\\Desktop\\projeto4\\avancar.gif"));
-		lblNewLabel_2.setBounds(51, 430, 95, 50);
-		contentPane.add(lblNewLabel_2);
-		
-		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\819167235\\Desktop\\projeto4\\maisopcoes.gif"));
-		lblNewLabel.setBounds(476, 430, 95, 50);
-		contentPane.add(lblNewLabel);
-		
 		lblMaisOpes = new JLabel("Mais Op\u00E7\u00F5es");
-		lblMaisOpes.setBounds(476, 405, 73, 14);
+		lblMaisOpes.setBounds(476, 405, 84, 14);
 		contentPane.add(lblMaisOpes);
+		
+		JLabel lblTroco = new JLabel("Troco");
+		lblTroco.setBounds(507, 321, 46, 14);
+		contentPane.add(lblTroco);
+		
+		txtTroco = new JTextField();
+		txtTroco.setBounds(476, 348, 95, 37);
+		contentPane.add(txtTroco);
+		txtTroco.setColumns(10);
+		
+		textField = new JTextField();
+		textField.setBounds(343, 338, 122, 56);
+		contentPane.add(textField);
+		textField.setColumns(10);
+		
+		lblValorRecebido = new JLabel("Valor Recebido");
+		lblValorRecebido.setBounds(343, 309, 93, 14);
+		contentPane.add(lblValorRecebido);
+		
+		JButton btnNewButton = new JButton("");
+		btnNewButton.setIcon(new ImageIcon("C:\\Users\\819167235\\git\\projeto4\\github.com\\GuilhermeRibeiro7235\\projeto4\\Projeto4\\ImageLibrary\\avancar.gif"));
+		btnNewButton.setBounds(43, 424, 116, 56);
+		contentPane.add(btnNewButton);
+		
+		JButton btnNewButton_1 = new JButton("");
+		btnNewButton_1.setIcon(new ImageIcon("C:\\Users\\819167235\\git\\projeto4\\github.com\\GuilhermeRibeiro7235\\projeto4\\Projeto4\\ImageLibrary\\cancelar.gif"));
+		btnNewButton_1.setBounds(220, 430, 122, 50);
+		contentPane.add(btnNewButton_1);
+		
+		JButton btnNewButton_2 = new JButton("");
+		btnNewButton_2.setIcon(new ImageIcon("C:\\Users\\819167235\\git\\projeto4\\github.com\\GuilhermeRibeiro7235\\projeto4\\Projeto4\\ImageLibrary\\maisopcoes.gif"));
+		btnNewButton_2.setBounds(476, 430, 122, 50);
+		contentPane.add(btnNewButton_2);
 
 		
 	}
