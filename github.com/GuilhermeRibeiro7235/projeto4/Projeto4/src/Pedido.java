@@ -81,7 +81,7 @@ public class Pedido extends JFrame {
 		txtCodigoDeBarra.setColumns(10);
 		
 		txtValorUnitario = new JTextField();
-		txtValorUnitario.setBounds(101, 164, 86, 34);
+		txtValorUnitario.setBounds(89, 164, 86, 34);
 		contentPane.add(txtValorUnitario);
 		txtValorUnitario.setColumns(10);
 		
@@ -144,12 +144,12 @@ public class Pedido extends JFrame {
 		
 		JButton btnNewButton_1 = new JButton("");
 		btnNewButton_1.setIcon(new ImageIcon("C:\\Users\\819167235\\git\\projeto4\\github.com\\GuilhermeRibeiro7235\\projeto4\\Projeto4\\ImageLibrary\\cancelar.gif"));
-		btnNewButton_1.setBounds(220, 430, 122, 50);
+		btnNewButton_1.setBounds(220, 424, 122, 56);
 		contentPane.add(btnNewButton_1);
 		
 		JButton btnNewButton_2 = new JButton("");
 		btnNewButton_2.setIcon(new ImageIcon("C:\\Users\\819167235\\git\\projeto4\\github.com\\GuilhermeRibeiro7235\\projeto4\\Projeto4\\ImageLibrary\\maisopcoes.gif"));
-		btnNewButton_2.setBounds(476, 430, 122, 50);
+		btnNewButton_2.setBounds(476, 424, 122, 56);
 		contentPane.add(btnNewButton_2);
 
 		

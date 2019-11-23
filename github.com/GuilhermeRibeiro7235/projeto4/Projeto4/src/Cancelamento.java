@@ -8,6 +8,7 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 import javax.swing.ImageIcon;
 import javax.swing.SwingConstants;
+import javax.swing.JButton;
 
 public class Cancelamento extends JFrame {
 
@@ -58,12 +59,6 @@ public class Cancelamento extends JFrame {
 		label.setBounds(28, 147, 46, 14);
 		contentPane.add(label);
 		
-		JLabel lblNewLabel_1 = new JLabel("");
-		lblNewLabel_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\819167235\\Desktop\\projeto4\\cancelar01.gif"));
-		lblNewLabel_1.setBounds(49, 144, 281, 47);
-		contentPane.add(lblNewLabel_1);
-		
 		JLabel label_1 = new JLabel("2.");
 		label_1.setBounds(28, 202, 46, 14);
 		contentPane.add(label_1);
@@ -72,26 +67,28 @@ public class Cancelamento extends JFrame {
 		label_2.setBounds(28, 273, 46, 14);
 		contentPane.add(label_2);
 		
-		JLabel lblNewLabel_2 = new JLabel("");
-		lblNewLabel_2.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_2.setIcon(new ImageIcon("C:\\Users\\819167235\\Desktop\\projeto4\\Cancelar2.gif"));
-		lblNewLabel_2.setBounds(49, 202, 281, 60);
-		contentPane.add(lblNewLabel_2);
-		
-		JLabel lblNewLabel_3 = new JLabel("");
-		lblNewLabel_3.setIcon(new ImageIcon("C:\\Users\\819167235\\Desktop\\projeto4\\cancelar3.gif"));
-		lblNewLabel_3.setBounds(59, 273, 281, 65);
-		contentPane.add(lblNewLabel_3);
-		
 		JLabel lblTodos = new JLabel("Todos");
 		lblTodos.setBounds(10, 365, 46, 14);
 		contentPane.add(lblTodos);
 		
-		JLabel lblNewLabel_4 = new JLabel("");
-		lblNewLabel_4.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_4.setIcon(new ImageIcon("C:\\Users\\819167235\\Desktop\\projeto4\\CancelarTodos.gif"));
-		lblNewLabel_4.setBounds(59, 369, 281, 43);
-		contentPane.add(lblNewLabel_4);
+		JButton btnNewButton = new JButton("");
+		btnNewButton.setIcon(new ImageIcon("C:\\Users\\819167235\\Desktop\\projeto4\\cancelar01.gif"));
+		btnNewButton.setBounds(59, 136, 287, 65);
+		contentPane.add(btnNewButton);
+		
+		JButton btnNewButton_1 = new JButton("");
+		btnNewButton_1.setIcon(new ImageIcon("C:\\Users\\819167235\\Desktop\\projeto4\\Cancelar2.gif"));
+		btnNewButton_1.setBounds(59, 205, 281, 57);
+		contentPane.add(btnNewButton_1);
+		
+		JButton btnNewButton_2 = new JButton("");
+		btnNewButton_2.setIcon(new ImageIcon("C:\\Users\\819167235\\Desktop\\projeto4\\cancelar3.gif"));
+		btnNewButton_2.setBounds(59, 273, 277, 60);
+		contentPane.add(btnNewButton_2);
+		
+		JButton btnNewButton_3 = new JButton("");
+		btnNewButton_3.setIcon(new ImageIcon("C:\\Users\\819167235\\Desktop\\projeto4\\CancelarTodos.gif"));
+		btnNewButton_3.setBounds(59, 365, 286, 64);
+		contentPane.add(btnNewButton_3);
 	}
-
 }

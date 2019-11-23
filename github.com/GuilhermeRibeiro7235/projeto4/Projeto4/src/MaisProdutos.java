@@ -35,6 +35,8 @@ public class MaisProdutos extends Pedido {
 	 * Create the frame.
 	 */
 	public MaisProdutos() {
+		
+		Connection conn = ConnectionFactory.getConnection();
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(750, 30, 800, 800);
 		contentPane = new JPanel();
@@ -45,15 +47,9 @@ public class MaisProdutos extends Pedido {
     	Barcode b = new Barcode();
 
 
-		Mercadoria m = null;
-		List<Mercadoria> lista = new ArrayList();
-    	for(int x = 0;x<12;x++) {
-    		m = new Mercadoria();
-    		m.setCodigo("1234561234561");
-    		m.setDescricao("Produto Lindo "+(x+1));
-    		lista.add(m);
-    	}
-    	
+		Mercadoria m = new Mercadoria();
+		List<Mercadoria> lista = m.semCodigo(conn);
+   	
     	
     	
 		JLabel codigoBarra = null;

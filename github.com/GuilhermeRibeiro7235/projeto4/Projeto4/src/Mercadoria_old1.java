@@ -7,7 +7,7 @@ import java.util.Date;
 
 import javax.swing.JOptionPane;
 
-public class Mercadoria {
+public class Mercadoria_old1 {
 	private int id;
 	private String codigo;
 	private String descricao;
@@ -25,7 +25,7 @@ public class Mercadoria {
 				+ codImagem + ", codigoExiste=" + codigoExiste + "]";
 	}
 
-	public Mercadoria(String codigo, String descricao, String unidade, Double preco, Date dataAtualizacao,
+	public Mercadoria_old1(String codigo, String descricao, String unidade, Double preco, Date dataAtualizacao,
 			boolean ativo, String codImagem, boolean codigoExiste) {
 		super();
 		this.codigo = codigo;
@@ -40,7 +40,7 @@ public class Mercadoria {
 	
 	
 
-	public Mercadoria() {
+	public Mercadoria_old1() {
 		super();
 	}
 
